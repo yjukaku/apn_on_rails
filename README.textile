@@ -141,7 +141,12 @@ database rather than in the config directory, however, it is still possible to u
 stored in the config directory.  For this setup, the following configurations apply.)
 APN on Rails has the following default configurations that you change for your setup.  
 
-To generate the files that will be used here, run `script/rails generate configatron:install`
+To generate the files that will be used here, run 
+
+<pre><code>
+script/rails generate configatron:install`
+</pre></code>
+
 Then customize the config/configatron files that were generated to your settings.
 
 <pre><code>
