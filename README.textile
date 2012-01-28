@@ -136,8 +136,10 @@ Now, to create the tables you need for APN on Rails, run the following task:
 </pre></code>
 
 APN on Rails uses the Configatron gem, http://github.com/markbates/configatron/tree/master, 
-to configure itself. (With the change to multi-app support, the certifications are stored in the 
-database rather than in the config directory, however, it is still possible to use the default "app" and the certificates
+to configure itself. With the change to multi-app support, the certifications are stored in the 
+database rather than in the config directory.
+
+However, it is still possible to use the default "app" and the certificates
 stored in the config directory.  For this setup, the following configurations apply.)
 APN on Rails has the following default configurations that you change for your setup.  
 
