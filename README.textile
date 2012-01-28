@@ -144,7 +144,7 @@ APN on Rails has the following default configurations that you change for your s
 To generate the files that will be used here, run 
 
 <pre><code>
-script/rails generate configatron:install`
+script/rails generate configatron:install
 </pre></code>
 
 Then customize the config/configatron files that were generated to your settings.
