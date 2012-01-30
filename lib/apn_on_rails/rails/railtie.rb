@@ -1,9 +1,9 @@
-if defined?(Rails::Railtie) # backwards compatible
+if defined?(::Rails::Railtie) # backwards compatible
 
 module APN
   module Rails
     
-    class Railtie < Rails::Railtie
+    class Railtie < ::Rails::Railtie
       rake_tasks do
         Dir[File.join(File.dirname(__FILE__),'..', 'tasks/*.rake')].each { |f| load f }
       end
