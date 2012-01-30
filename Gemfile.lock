@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    apn_on_rails (0.5.0)
+    apn_on_rails (0.5.1)
       actionpack
       activerecord
       configatron
