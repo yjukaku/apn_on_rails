@@ -192,7 +192,7 @@ h2. Example (assuming you have created an app and stored your keys on it):
 
 <pre><code>
   $ ./script/console
-  >> app = APN::App.create(:name => "My App", :apn_dev_cert => "PASTE YOUR DEV CERT HERE", :apn_prod_cert => "PASTE YOUR PROD CERT HERE")
+  >> app = APN::App.create(:apn_dev_cert => "PASTE YOUR DEV CERT HERE", :apn_prod_cert => "PASTE YOUR PROD CERT HERE")
   >> device = APN::Device.create(:token => "XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX",:app_id => app.id)
   >> notification = APN::Notification.new
   >> notification.device = device
