@@ -11,7 +11,7 @@ It supports:
 
 h2. Feature Descriptions
 
-Multiple iPhone Apps: In previous versions of this gem a single Rails application was set up to 
+*Multiple iPhone Apps*: In previous versions of this gem a single Rails application was set up to 
 manage push notifications for a single iPhone app.  In many cases it is useful to have a single Rails
 app manage push notifications for multiple iPhone apps.  With the addition of an APN::App model, this 
 is now possible.  The certificates are now stored on instances of APN::App and all devices are intended to be associated
@@ -19,15 +19,15 @@ with a particular app.  For compatibility with existing implementations it is st
 are not associated with an APN::App and to send individual notifications to them using the certs stored in the 
 config directory.
 
-Individual and Group Notifications: Previous versions of this gem treated each notification individually
+*Individual and Group Notifications*: Previous versions of this gem treated each notification individually
 and did not provide a built-in way to send a broadcast notification to a group of devices.  Group notifications
 are now built into the gem.  A group notification is associated with a group of devices and shares its 
 contents across the entire group of devices. (Group notifications are only available for groups of devices associated 
 with an APN::App) 
 
-Notification Content Areas: Notifications may contain alerts, badges, sounds, and custom properties.
+*Notification Content Areas*: Notifications may contain alerts, badges, sounds, and custom properties.
 
-Pull Notifications: This version of the gem supports an alternative notification method that relies
+*Pull Notifications*: This version of the gem supports an alternative notification method that relies
 on pulls from client devices and does not interact with the Apple Push Notification servers.  This feature
 may be used entirely independently of the push notification features.  Pull notifications may be
 created for an app.  A client app can query for the most recent pull notification available since a 
